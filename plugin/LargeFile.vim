@@ -32,7 +32,7 @@ endif
 " (based on vimtip#611)
 augroup LargeFile
  au!
- au BufReadPre * set readonly
+ "au BufReadPre * set readonly
  au BufReadPre	* call <SID>LargeFile(0,expand("<afile>"))
  au BufReadPost	* call <SID>LargeFilePost()
 augroup END
